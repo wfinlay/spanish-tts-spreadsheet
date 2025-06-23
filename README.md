@@ -6,6 +6,17 @@ pyttsx3, macOS native voices and Azure Speech Services.
 **This script provides four different methods for generating Spanish audio files from your 
 spreadsheet:**      
 
+## Why do I need this?
+This project was created so I could more easily create Anki flash cards for learning Spanish with audio of 
+the correct pronounciation. 
+There are add-ons in Anki that do this too but I wanted to be able to track and import my vocabulary and 
+study material outside of Anki. Being able to easily generating audio files to aid in proper 
+pronounciation and having the option to select a regional pronounciation is really helpful.   
+
+**Side note:** Though I am a professional developer (and know python very well) I decided to use Claude.ai to 
+generate most of the code for this project. I've altered it here and there as needed but the bulk of the 
+code is from "vibecoding".   
+
 ## Installation Requirements   
 
 Be smart and use a [python virtual environment](https://realpython.com/python-virtual-environments-a-primer/).
