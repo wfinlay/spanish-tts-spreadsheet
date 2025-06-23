@@ -1,16 +1,16 @@
 # spanish-tts-spreadsheet
 Automated Spanish text-to-speech generator that processes Excel/CSV files and adds audio 
 file paths to adjacent columns. Supports multiple TTS engines including Google TTS, 
-pyttsx3, and Azure Speech Services.   
+pyttsx3, macOS native voices and Azure Speech Services.   
 
-**This script provides three different methods for generating Spanish audio files from your 
+**This script provides four different methods for generating Spanish audio files from your 
 spreadsheet:**      
 
 ## Installation Requirements   
 
-Be smart and use this in a [python virtual environment](https://realpython.com/python-virtual-environments-a-primer/).
+Be smart and use a [python virtual environment](https://realpython.com/python-virtual-environments-a-primer/).
 
-	project_path="${HOME}/Documents/Source/Projects/spanish-tts-spreadsheet" mkdir -p ${project_path} && cd ${project_path}
+	project_path="${HOME}/Documents/Source/Projects/spanish-tts-spreadsheet" && mkdir -p ${project_path} && cd ${project_path}
 	python3 -m venv venv/
 	source ./venv/bin/activate
 	pip install -r requirements.txt 
@@ -52,13 +52,6 @@ pyttsx3 - Offline option
 - Limited Spanish voice quality (depends on your system)
 - Generates WAV files
 
-
-Azure Speech Services - Premium option   
-
-- Highest quality voices
-- Requires paid API subscription
-- Many Spanish accent options
-
 macOS Method Advantages:
 
 - High Quality - Native macOS voices are very natural
@@ -69,12 +62,13 @@ macOS Method Advantages:
 - Adjustable Speed - Control speaking rate
 - [See note below on audio format AIFF to MP3 conversion](#audio-format-notes)
 
+Azure Speech Services - Premium option   
 
-## How to Use:
+- Highest quality voices
+- Requires paid API subscription
+- Many Spanish accent options
 
-- Update the file path: Change spanish_words.xlsx to your actual spreadsheet path   
-- Choose your method: The script defaults to gTTS, which I recommend for Spanish   
-- Run the script: It will create an audio_files directory and generate MP3/WAV files   
+## How to Use:  
 
 See ```./docs/usage_examples.md``` for examples   
 
